@@ -16,6 +16,8 @@
 		B793C3A92B715368008FE83B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B793C3A82B715368008FE83B /* NetworkManager.swift */; };
 		B7B73BA52B715CCD0059863D /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B73BA42B715CCD0059863D /* WeatherViewModel.swift */; };
 		B7B73BA92B716DB40059863D /* extension String+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B73BA82B716DB40059863D /* extension String+DateFormatter.swift */; };
+		B7B73BAB2B716E990059863D /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B73BAA2B716E990059863D /* ImageViewModel.swift */; };
+		B7B73BAD2B716F990059863D /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B73BAC2B716F990059863D /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		B7B73BA42B715CCD0059863D /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		B7B73BA62B715E380059863D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B7B73BA82B716DB40059863D /* extension String+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension String+DateFormatter.swift"; sourceTree = "<group>"; };
+		B7B73BAA2B716E990059863D /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		B7B73BAC2B716F990059863D /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 			children = (
 				B793C3892B713DEA008FE83B /* MainScreen.swift */,
 				B793C3952B7140CE008FE83B /* MainCell.swift */,
+				B7B73BAC2B716F990059863D /* ImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 			children = (
 				B793C3A82B715368008FE83B /* NetworkManager.swift */,
 				B7B73BA42B715CCD0059863D /* WeatherViewModel.swift */,
+				B7B73BAA2B716E990059863D /* ImageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -192,6 +198,8 @@
 				B793C3A92B715368008FE83B /* NetworkManager.swift in Sources */,
 				B793C39A2B7142FB008FE83B /* WeatherModel.swift in Sources */,
 				B793C3962B7140CE008FE83B /* MainCell.swift in Sources */,
+				B7B73BAD2B716F990059863D /* ImageView.swift in Sources */,
+				B7B73BAB2B716E990059863D /* ImageViewModel.swift in Sources */,
 				B7B73BA92B716DB40059863D /* extension String+DateFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

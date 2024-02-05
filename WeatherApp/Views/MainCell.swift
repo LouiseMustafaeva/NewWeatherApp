@@ -21,8 +21,9 @@ struct MainCell: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                 .font(.custom("AvenirNext-bold", size: 20))
         
-            Image(systemName: "camera")
+            ImageView(urlString: imageUrl)
                 .frame(width: 60, height: 60)
+                
             
             VStack {
                 Text("min")
