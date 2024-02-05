@@ -15,7 +15,7 @@ struct MainCell: View {
     
     var body: some View {
         HStack {
-            Text(day)
+            Text(day.weekday() ?? "")
                 .foregroundColor(.black)
                 .listRowSeparator(.hidden)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
