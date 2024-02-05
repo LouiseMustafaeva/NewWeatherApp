@@ -15,7 +15,7 @@ struct MainCell: View {
     
     var body: some View {
         HStack {
-            Text("Monday")
+            Text(day)
                 .foregroundColor(.black)
                 .listRowSeparator(.hidden)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
@@ -28,7 +28,7 @@ struct MainCell: View {
                 Text("min")
                     .font(.custom("AvenirNext", size: 15))
                     .foregroundColor(.gray)
-                Text("15°C")
+                Text("\(Int(minTemp))°C")
                     .font(.custom("AvenirNext-bold", size: 22))
                     .foregroundColor(.black)
                     .frame(width: 60)
@@ -37,7 +37,7 @@ struct MainCell: View {
                 Text("max")
                     .font(.custom("AvenirNext", size: 15))
                     .foregroundColor(.gray)
-                Text("17°C")
+                Text("\(Int(maxTemp))°C")
                     .font(.custom("AvenirNext-bold", size: 22))
                     .foregroundColor(.black)
                     .frame(width: 60)
