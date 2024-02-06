@@ -10,6 +10,7 @@ import Foundation
 enum Constants {
     
     enum Sizes {
+        static let xs: CGFloat = 50
         static let s: CGFloat = 60
         static let m: CGFloat = 100
         static let l: CGFloat = 120
@@ -25,8 +26,9 @@ enum Constants {
         static let s: CGFloat = 15
         static let m: CGFloat = 20
         static let l: CGFloat = 22
-        static let xl: CGFloat = 60
-        static let xxl: CGFloat = 75
+        static let xl: CGFloat = 45
+        static let xxl: CGFloat = 60
+        static let xxxl: CGFloat = 75
     }
     
     enum Url {

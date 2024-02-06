@@ -18,8 +18,14 @@ struct DetailScreen: View {
         VStack {
             ImageView(urlString: viewModel.model?.current?.condition.icon)
                 .frame(width: Constants.Sizes.xl, height: Constants.Sizes.xl, alignment: .center)
+
+            Text(days?[dayIndex].date.weekday()?.capitalized ?? "")
+                .foregroundColor(.black)
+                .font(.custom(Constants.FontNames.avenirNext, size: Constants.FontSizes.xl))
+
+            
             Text("\(viewModel.model?.current?.temp_c ?? 0)°C")
-                .font(.custom(Constants.FontNames.avenirNext, size: Constants.FontSizes.xxl))
+                .font(.custom(Constants.FontNames.avenirNext, size: Constants.FontSizes.xxxl))
                 .foregroundColor(.black)
             HStack {
                 ScrollView(.horizontal, showsIndicators: false) {

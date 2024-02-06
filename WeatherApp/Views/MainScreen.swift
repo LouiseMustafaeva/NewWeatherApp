@@ -15,9 +15,13 @@ struct MainScreen: View {
         NavigationView {
             VStack {
                 Text("\(viewModel.model?.current?.temp_c ?? 0)°C")
-                    .font(.custom("AvenirNext-Bold", size: 75 ))
+                    .font(.custom(Constants.FontNames.avenirNextBold, size: Constants.FontSizes.xxxl ))
                     .foregroundColor(.black)
                     .padding(.top, 20)
+                Text("Ташкент")
+                    .font(.custom(Constants.FontNames.avenirNext, size: Constants.FontSizes.l ))
+                    .foregroundColor(.black)
+                    .padding(.bottom, 20)
                 Picker("", selection: $selectedSegment) {
                     Text("3 days".localized).tag(0)
                     Text("7 days".localized).tag(1)

@@ -19,10 +19,10 @@ struct MainCell: View {
                 .foregroundColor(.black)
                 .listRowSeparator(.hidden)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-                .font(.custom(Constants.FontNames.avenirNextBold, size: Constants.FontSizes.l))
+                .font(.custom(Constants.FontNames.avenirNextBold, size: Constants.FontSizes.m))
             
             ImageView(urlString: imageUrl)
-                .frame(width: Constants.Sizes.s, height: Constants.Sizes.s)
+                .frame(width: Constants.Sizes.xs, height: Constants.Sizes.xs)
             
             VStack {
                 Text("min".localized)
