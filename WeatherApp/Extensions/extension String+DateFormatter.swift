@@ -13,7 +13,8 @@ extension String {
         dateFormatter.dateFormat = "yyyy-MM-dd"
 
         if let date = dateFormatter.date(from: self) {
-            let calendar = Calendar.current
+            var calendar = Calendar.current
+            calendar.timeZone = TimeZone.current
             let weekday = calendar.component(.weekday, from: date)
 
             let weekdays = dateFormatter.weekdaySymbols
@@ -32,6 +33,7 @@ extension String {
             if let date = inputFormatter.date(from: self) {
                 let outputFormatter = DateFormatter()
                 outputFormatter.dateFormat = "HH:mm"
+                outputFormatter.timeZone = TimeZone.current
                 
                 return outputFormatter.string(from: date)
             } else {
