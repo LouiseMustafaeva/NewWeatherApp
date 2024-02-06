@@ -15,27 +15,31 @@ struct DetailScreen: View {
     
     var dayIndex: Int
     var body: some View {
-        Text("\(viewModel.model?.current?.temp_c ?? 0)°C")
-            .font(.custom("AvenirNext", size: 70))
-            .foregroundColor(.black)
-            .padding(.top)
-        
-        HStack {
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
-                    ForEach(0..<(hours.count), id: \.self) { i in
-                        Cell(time: hours[i].time, temp: hours[i].temp_c, imageUrl: hours[i].condition.icon)
+        VStack {
+            ImageView(urlString: viewModel.model?.current?.condition.icon)
+                .frame(width: 150, height: 150, alignment: .center)
+            
+            Text("\(viewModel.model?.current?.temp_c ?? 0)°C")
+                .font(.custom("AvenirNext", size: 70))
+                .foregroundColor(.black)
+                .padding(.bottom)
+            
+            HStack {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(0..<(hours.count), id: \.self) { i in
+                            Cell(time: hours[i].time, temp: hours[i].temp_c, imageUrl: hours[i].condition.icon)
+                        }
                     }
-                }
-            }.onAppear(perform: {
-                Task {
-                    days =  try await viewModel.getForecastDays()
-                    guard let days = days else { return }
-                    hours = try await viewModel.getHours(array: days, index: dayIndex)
-
-                }
-                
-            })
+                }.onAppear(perform: {
+                    Task {
+                        days =  try await viewModel.getForecastDays()
+                        guard let days = days else { return }
+                        hours = try await viewModel.getHours(array: days, index: dayIndex)
+                    }
+                })
+            }
+            Spacer()
         }
     }
 }

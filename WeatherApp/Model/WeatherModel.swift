@@ -19,6 +19,7 @@ struct WeatherModel: Decodable {
     
     struct Current: Decodable {
         let temp_c: Int
+        let condition: Condition
     }
     
     struct Forecast: Decodable {
@@ -41,9 +42,11 @@ struct WeatherModel: Decodable {
                 let condition: Condition
             }
             
-            struct Condition: Decodable {
-                let icon: String
-            }
+            
         }
+    }
+    
+    struct Condition: Decodable {
+        let icon: String
     }
 }
