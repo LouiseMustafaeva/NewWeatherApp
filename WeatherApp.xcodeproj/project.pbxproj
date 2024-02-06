@@ -18,6 +18,7 @@
 		B7B73BA92B716DB40059863D /* extension String+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B73BA82B716DB40059863D /* extension String+DateFormatter.swift */; };
 		B7B73BAB2B716E990059863D /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B73BAA2B716E990059863D /* ImageViewModel.swift */; };
 		B7B73BAD2B716F990059863D /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B73BAC2B716F990059863D /* ImageView.swift */; };
+		B7B73BAF2B71720F0059863D /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B73BAE2B71720F0059863D /* DetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B7B73BA82B716DB40059863D /* extension String+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension String+DateFormatter.swift"; sourceTree = "<group>"; };
 		B7B73BAA2B716E990059863D /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 		B7B73BAC2B716F990059863D /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		B7B73BAE2B71720F0059863D /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				B793C3892B713DEA008FE83B /* MainScreen.swift */,
 				B793C3952B7140CE008FE83B /* MainCell.swift */,
 				B7B73BAC2B716F990059863D /* ImageView.swift */,
+				B7B73BAE2B71720F0059863D /* DetailScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7B73BAF2B71720F0059863D /* DetailScreen.swift in Sources */,
 				B793C38A2B713DEA008FE83B /* MainScreen.swift in Sources */,
 				B7B73BA52B715CCD0059863D /* WeatherViewModel.swift in Sources */,
 				B793C3882B713DEA008FE83B /* WeatherAppApp.swift in Sources */,

@@ -43,7 +43,7 @@ struct MainCell: View {
                     .foregroundColor(.black)
                     .frame(width: 60)
             }
-        }.padding(.horizontal)
+        }
     }
 }
 
