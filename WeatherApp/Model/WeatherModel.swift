@@ -38,6 +38,7 @@ struct WeatherModel: Decodable {
             struct Hour: Decodable {
                 let time: String
                 let temp_c: Float
+                let condition: Condition
             }
             
             struct Condition: Decodable {
