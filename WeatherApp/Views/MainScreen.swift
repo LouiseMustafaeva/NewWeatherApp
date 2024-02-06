@@ -18,7 +18,7 @@ struct MainScreen: View {
                     .font(.custom(Constants.FontNames.avenirNextBold, size: Constants.FontSizes.xxxl ))
                     .foregroundColor(.black)
                     .padding(.top, 20)
-                Text("Ташкент")
+                Text(viewModel.model?.location?.name ?? "")
                     .font(.custom(Constants.FontNames.avenirNext, size: Constants.FontSizes.l ))
                     .foregroundColor(.black)
                     .padding(.bottom, 20)
