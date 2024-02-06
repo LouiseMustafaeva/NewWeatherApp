@@ -48,7 +48,7 @@ struct Cell: View {
     
     var body: some View {
         VStack {
-            Text(time)
+            Text(time.convertToHours() ?? "")
             ImageView(urlString: imageUrl)
                 .frame(width: 50, height: 50, alignment: .center)
             Text("\(Int(temp))°C")

@@ -24,4 +24,19 @@ extension String {
             return nil
         }
     }
+    
+    func convertToHours() -> String? {
+            let inputFormatter = DateFormatter()
+            inputFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+            
+            if let date = inputFormatter.date(from: self) {
+                let outputFormatter = DateFormatter()
+                outputFormatter.dateFormat = "HH:mm"
+                
+                return outputFormatter.string(from: date)
+            } else {
+                return nil
+            }
+        }
+    
 }
