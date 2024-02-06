@@ -17,13 +17,10 @@ struct DetailScreen: View {
     var body: some View {
         VStack {
             ImageView(urlString: viewModel.model?.current?.condition.icon)
-                .frame(width: 150, height: 150, alignment: .center)
-            
+                .frame(width: Constants.Sizes.xl, height: Constants.Sizes.xl, alignment: .center)
             Text("\(viewModel.model?.current?.temp_c ?? 0)°C")
-                .font(.custom("AvenirNext", size: 70))
+                .font(.custom(Constants.FontNames.avenirNext, size: Constants.FontSizes.xxl))
                 .foregroundColor(.black)
-                .padding(.bottom)
-            
             HStack {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
@@ -38,6 +35,7 @@ struct DetailScreen: View {
                         hours = try await viewModel.getHours(array: days, index: dayIndex)
                     }
                 })
+                .padding(.top)
             }
             Spacer()
         }
@@ -54,8 +52,8 @@ struct Cell: View {
         VStack {
             Text(time.convertToHours() ?? "")
             ImageView(urlString: imageUrl)
-                .frame(width: 50, height: 50, alignment: .center)
+                .frame(width: Constants.Sizes.s, height: Constants.Sizes.s, alignment: .center)
             Text("\(Int(temp))°C")
-        }.frame(width: 100, height: 100)
+        }.frame(width: Constants.Sizes.m, height: Constants.Sizes.l)
     }
 }

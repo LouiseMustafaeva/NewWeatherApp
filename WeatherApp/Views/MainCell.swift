@@ -15,33 +15,33 @@ struct MainCell: View {
     
     var body: some View {
         HStack {
-            Text(day.weekday() ?? "")
+            Text(day.weekday()?.capitalized ?? "")
                 .foregroundColor(.black)
                 .listRowSeparator(.hidden)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-                .font(.custom("AvenirNext-bold", size: 20))
-        
+                .font(.custom(Constants.FontNames.avenirNextBold, size: Constants.FontSizes.l))
+            
             ImageView(urlString: imageUrl)
-                .frame(width: 60, height: 60)
-                
+                .frame(width: Constants.Sizes.s, height: Constants.Sizes.s)
             
             VStack {
                 Text("min".localized)
-                    .font(.custom("AvenirNext", size: 15))
+                    .font(.custom(Constants.FontNames.avenirNext, size: Constants.FontSizes.s))
                     .foregroundColor(.gray)
                 Text("\(Int(minTemp))°C")
-                    .font(.custom("AvenirNext-bold", size: 22))
+                    .font(.custom(Constants.FontNames.avenirNextBold, size: Constants.FontSizes.l))
                     .foregroundColor(.black)
-                    .frame(width: 60)
+                    .frame(width: Constants.Sizes.s)
             }
+            
             VStack {
                 Text("max".localized)
-                    .font(.custom("AvenirNext", size: 15))
+                    .font(.custom(Constants.FontNames.avenirNext, size: Constants.FontSizes.s))
                     .foregroundColor(.gray)
                 Text("\(Int(maxTemp))°C")
-                    .font(.custom("AvenirNext-bold", size: 22))
+                    .font(.custom(Constants.FontNames.avenirNextBold, size: Constants.FontSizes.l))
                     .foregroundColor(.black)
-                    .frame(width: 60)
+                    .frame(width: Constants.Sizes.s)
             }
         }
     }

@@ -19,7 +19,7 @@ enum NetworkingError: Error {
 }
 
 class NetworkManager {
-    let weatherURL = "http://api.weatherapi.com/v1/forecast.json?key=8783c9466d0e48c7912160458240402&"
+    let weatherURL = Constants.Url.mainUrl
     
     func createURLString(type: FavoriteDays) -> String {
         var days: Int

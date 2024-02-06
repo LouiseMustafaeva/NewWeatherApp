@@ -42,17 +42,13 @@ struct MainScreen: View {
                 updateData()
             }
             .onAppear {
-//                setModel()
                 updateData()
             }
-            
         }
     }
     
-     func updateData() {
+    func updateData() {
         Task {
-//            forecastDays =  try await viewModel.getForecastDays() ?? []
-            
             switch selectedSegment {
             case 0:
                 try await viewModel.getDataFromNetwork(type: .threeDays)
@@ -63,18 +59,8 @@ struct MainScreen: View {
             default:
                 break
             }
-            
-            
         }
-        
     }
-    
-//    func setModel() {
-//        Task {
-//            forecastDays =  try await viewModel.getForecastDays() ?? []
-//        }
-//    }
-
 }
 
 
