@@ -19,9 +19,9 @@ struct MainScreen: View {
                     .foregroundColor(.black)
                     .padding(.top, 20)
                 Picker("", selection: $selectedSegment) {
-                    Text("3 дня").tag(0)
-                    Text("7 дней").tag(1)
-                    Text("10 дней").tag(2)
+                    Text("3 days".localized).tag(0)
+                    Text("7 days".localized).tag(1)
+                    Text("10 days".localized).tag(2)
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 

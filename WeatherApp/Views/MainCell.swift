@@ -26,7 +26,7 @@ struct MainCell: View {
                 
             
             VStack {
-                Text("min")
+                Text("min".localized)
                     .font(.custom("AvenirNext", size: 15))
                     .foregroundColor(.gray)
                 Text("\(Int(minTemp))°C")
@@ -35,7 +35,7 @@ struct MainCell: View {
                     .frame(width: 60)
             }
             VStack {
-                Text("max")
+                Text("max".localized)
                     .font(.custom("AvenirNext", size: 15))
                     .foregroundColor(.gray)
                 Text("\(Int(maxTemp))°C")

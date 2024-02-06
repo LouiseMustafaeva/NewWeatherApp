@@ -19,6 +19,8 @@
 		B7B73BAB2B716E990059863D /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B73BAA2B716E990059863D /* ImageViewModel.swift */; };
 		B7B73BAD2B716F990059863D /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B73BAC2B716F990059863D /* ImageView.swift */; };
 		B7B73BAF2B71720F0059863D /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B73BAE2B71720F0059863D /* DetailScreen.swift */; };
+		B7B73BCE2B723B700059863D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7B73BD02B723B700059863D /* Localizable.strings */; };
+		B7B73BD32B723BD70059863D /* extension String + Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B73BD22B723BD70059863D /* extension String + Localized.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,9 @@
 		B7B73BAA2B716E990059863D /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 		B7B73BAC2B716F990059863D /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		B7B73BAE2B71720F0059863D /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		B7B73BCF2B723B700059863D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B7B73BD12B723B710059863D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B7B73BD22B723BD70059863D /* extension String + Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension String + Localized.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +81,7 @@
 				B7B73BA72B716D840059863D /* Extensions */,
 				B793C38B2B713DEC008FE83B /* Assets.xcassets */,
 				B793C38D2B713DEC008FE83B /* Preview Content */,
+				B7B73BD02B723B700059863D /* Localizable.strings */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -121,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				B7B73BA82B716DB40059863D /* extension String+DateFormatter.swift */,
+				B7B73BD22B723BD70059863D /* extension String + Localized.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -167,6 +174,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = B793C37B2B713DEA008FE83B;
 			productRefGroup = B793C3852B713DEA008FE83B /* Products */;
@@ -184,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B793C38F2B713DEC008FE83B /* Preview Assets.xcassets in Resources */,
+				B7B73BCE2B723B700059863D /* Localizable.strings in Resources */,
 				B793C38C2B713DEC008FE83B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7B73BD32B723BD70059863D /* extension String + Localized.swift in Sources */,
 				B7B73BAF2B71720F0059863D /* DetailScreen.swift in Sources */,
 				B793C38A2B713DEA008FE83B /* MainScreen.swift in Sources */,
 				B7B73BA52B715CCD0059863D /* WeatherViewModel.swift in Sources */,
@@ -209,6 +219,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B7B73BD02B723B700059863D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7B73BCF2B723B700059863D /* en */,
+				B7B73BD12B723B710059863D /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B793C3902B713DEC008FE83B /* Debug */ = {

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  WeatherApp
+
+  Created by Louise on 06/02/24.
+  
+*/
+
+"3 days" = "3 дня";
+"7 days" = "7 дней";
+"10 days" = "10 дней";
+"min" = "мин";
+"max" = "макс";
